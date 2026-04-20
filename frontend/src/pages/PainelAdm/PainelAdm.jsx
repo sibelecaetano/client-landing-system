@@ -25,9 +25,6 @@ const PainelAdm = () => {
   const [emailStatus, setEmailStatus] = useState(null);
   const navigate = useNavigate();
 
-  const ativos = 0;
-  const emailsEnviados = 0;
-
   const fetchSubscribers = async () => {
     setLoadingSubscribers(true);
     try {
@@ -179,26 +176,6 @@ const PainelAdm = () => {
           </div>
           <div className={styles.cardIcon}>
             <Users size={28} />
-          </div>
-        </div>
-
-        <div className={`${styles.card} ${styles.cardGreen}`}>
-          <div className={styles.cardContent}>
-            <h3 className={styles.cardTitle}>Ativos</h3>
-            <p className={styles.cardValue}>{ativos}</p>
-          </div>
-          <div className={styles.cardIcon}>
-            <Mail size={28} />
-          </div>
-        </div>
-
-        <div className={`${styles.card} ${styles.cardPurple}`}>
-          <div className={styles.cardContent}>
-            <h3 className={styles.cardTitle}>E-mails Enviados</h3>
-            <p className={styles.cardValue}>{emailsEnviados}</p>
-          </div>
-          <div className={styles.cardIcon}>
-            <Send size={28} />
           </div>
         </div>
       </div>
